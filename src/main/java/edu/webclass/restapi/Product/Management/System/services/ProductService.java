@@ -21,7 +21,7 @@ public class ProductService {
         return productRepository.createNewProduct(new Product(title,brand,price));
     }
 
-
-
-
+    public Product findProductById(String productId) throws ProductRepository.NotFoundException {
+        return productRepository.findProductById(productId);
+    }
 }
